@@ -1,0 +1,33 @@
+import time
+from watchdog.observers import Observer
+from watchdog.events import PatternMatchingEventHandler
+
+# 실행할 코드
+def run_code(event):
+    print(f"파일 {event.src_path} 가 추가되었습니다.")
+    print(30)
+    # 여기에 실행할 코드를 작성하세요.
+
+# 이벤트 핸들러 생성
+patterns = ["*"]
+ignore_patterns = None
+ignore_directories = False
+case_sensitive = True
+my_event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories, case_sensitive)
+my_event_handler.on_created = run_code
+
+# 감시할 폴더 경로
+path = r"C:\Users\wnstj\OneDrive\바탕 화면\qqq" # 현재 디렉토리를 감시합니다. 원하는 경로로 변경하세요.
+
+# 감시자 생성 및 시작
+go_recursively = True
+my_observer = Observer()
+my_observer.schedule(my_event_handler, path, recursive=go_recursively)
+my_observer.start()
+
+try:
+    while True:
+        time.sleep(1)
+except KeyboardInterrupt:
+    my_observer.stop()
+my_observer.join()
