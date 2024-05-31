@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = r'C:\Users\wnstj\OneDrive\바탕 화면\세종대\컴소학술제'
+UPLOAD_FOLDER = ''
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/upload', methods=['GET', 'POST']) # GET, POST 메서드 허용
