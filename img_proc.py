@@ -1,3 +1,4 @@
+# 머신러닝 사용한 matting
 from rembg import remove
 
 inputPath = r"C:\Users\wnstj\Downloads\temp2.jpg"
