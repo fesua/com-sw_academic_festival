@@ -7,7 +7,7 @@ from watchdog.events import PatternMatchingEventHandler
 save_folder = ""
 
 # API 키 설정
-API_KEY = 'your_api_key_here'
+API_KEY = ''
 
 # API 엔드포인트 설정
 BASE_URL = 'https://api.anything.world/v2/'
@@ -19,7 +19,8 @@ headers = {
 }
 
 # 리깅 요청 함수
-def rig_model(model_id):
+def rig_model():
+    model_id = "dog" # dog or cat만 동작하는데 같은 방식으로 처리
     url = f'{BASE_URL}rigging'
     payload = {
         'model_id': model_id
