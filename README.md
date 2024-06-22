@@ -15,17 +15,17 @@
 
  
 # if you want to run our code, please follow these steps:
-  1. Installation
+ ### 1. Installation
   - python >= 3.7+
   - PaddlePaddle >= 2.0.2
-  2. Give API Key
+ ### 2. Give API Key
   - Meshy
   - Anything.World
-  3. Insert path in each file
+ ### 3. Insert path in each file
   - Anything.World.API
   - Meshy.API
   - img_proc
   - input_check
   - recieve_image
-  4. Get Image
+ ### 4. Get Image
   - Access url in recieve image
