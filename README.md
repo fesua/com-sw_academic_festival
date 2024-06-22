@@ -14,7 +14,7 @@
 
 
  
-# if you want to code our git, please follow this step:
+# if you want to run our code, please follow these steps:
   1. Installation
   - python >= 3.7+
   - PaddlePaddle >= 2.0.2
