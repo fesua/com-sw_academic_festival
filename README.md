@@ -14,7 +14,7 @@
 
 
  
-# if you want to run our code, please follow these steps:
+# If you want to run our code, please follow these steps:
  ### 1. Installation
   - python >= 3.7+
   - PaddlePaddle >= 2.0.2
